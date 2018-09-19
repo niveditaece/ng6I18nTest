@@ -28,6 +28,15 @@
             "scripts": []
           },
           "configurations": {
+            "kn": {
+              "aot": true,
+              "outputPath": "dist/my-project-fr/",
+              "i18nFile": "src/locale/messages.kn.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "kn",
+              "i18nMissingTranslation": "error"
+              
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -53,6 +62,9 @@
             "browserTarget": "i18nPOC:build"
           },
           "configurations": {
+            "kn": {
+              "browserTarget": "i18nPOC:build:kn"
+            },
             "production": {
               "browserTarget": "i18nPOC:build:production"
             }
